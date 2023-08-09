@@ -10,7 +10,7 @@ const routes: Routes = [
         component: LayoutPageComponent,
         children: [
             { path: "login", component: LoginPageComponent },
-            { path: "new-acount", component: RegisterPageComponent }, //ruta comodin, se debe tener cuidado donde se coloca para que no pise las anteriores
+            { path: "new-account", component: RegisterPageComponent }, //ruta comodin, se debe tener cuidado donde se coloca para que no pise las anteriores
             { path: "**", redirectTo: "login" },
         ]
     },
