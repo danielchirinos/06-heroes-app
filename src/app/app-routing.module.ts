@@ -8,8 +8,8 @@ const routes: Routes = [
         loadChildren: () => import("./auth/auth.module").then( m => m.AuthModule)
     },
     {
-        path: "heroes",
-        loadChildren: () => import("./heroes/heroes.module").then( m => m.HeroesModule)
+        path: "asd",
+        loadChildren: () => import("./shared/shared.module").then( m => m.SharedModule)
     },
     {
         path: "404",
@@ -17,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: "",
-        redirectTo: "heroes",
+        redirectTo: "asd",
         pathMatch: "full" //el patch debe ser tal cual vacio para que haga coincidencia
     },
     {
