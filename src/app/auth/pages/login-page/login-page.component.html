@@ -10,11 +10,11 @@
     
     <mat-form-field>
         <mat-label> Clave </mat-label>
-        <input type="password" matInput placeholder="Clave de usaurio">
+        <input type="password" matInput placeholder="Clave de usaurio" autocomplete="off" value="">
     </mat-form-field>
 
 
-    <button mat-button mat-flat-button color="primary">
+    <button mat-button mat-flat-button color="primary" (click)="onLogin()">
         <mat-icon>login</mat-icon>Ingresar
     </button>
 
